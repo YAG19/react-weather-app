@@ -1,0 +1,65 @@
+.container{
+   
+    background: #acb6e5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #86fde8, #acb6e59d);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #86fde786, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+    color: black;
+    border-radius: 10px 10px 10px 10px;
+    font-family: Quicksand;
+    animation: 2s ease 0s normal FadeIn;
+}
+
+
+.citys{
+   
+    margin-top: 20px;
+    text-align: center;
+    font: 40px sans-serif;
+}
+
+.desc{
+    margin-top: 2px;
+    font-size: 40px;
+}
+
+.day{
+    font-weight: 500;
+    margin-top: 10%;
+    font-size: 40px;
+}
+
+
+.temp{
+ 
+    margin-top: 10%;
+    font-size: 1em;
+    font-weight: 600;
+    animation: 4s ease-out 0s 1 FadeIn;
+    
+}
+
+.weather-icon{
+    
+    background-color: rgba(5, 5, 5, 0);
+    border: none;
+}
+
+@keyframes FadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+
+@keyframes FadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;   
+    }
+}

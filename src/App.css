@@ -1,38 +1,108 @@
 .App {
+  padding: 0;
+  padding-top: 50px;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 60px;
+  color: aliceblue;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  position: relative;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+ input{
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  width: 100%;
+  border: none;
+  /* background-color: rgb(255, 255, 255);
+   */
+  background-color: rgba(255, 255, 255, 0.26);
+  font-size: 16px;
+  padding: 10px 15px 10px 40px;
+  color: rgb(197, 197, 197);
+  transition: all 0.2s ease 0s;
+  border-radius: 20px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ }
+
+ .icon{
+  width: 100%;
+   padding: 15px;
+   background-color: aquamariness;
+} 
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.search {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border-right: none;
+  width: 100%;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.error{
+  width: min-content;
+  height: min-content;
+  text-align: center;
+  width: 100%;
+  font-size: 40px;
+  /* background-color:rgba(2, 218, 247, 0.219); */
+  color: #a41c4e;
+  margin-top: 20%;
+  border-radius: 10px;
+  /* font-weight: 400; */
+  animation: reveal ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.searchTerm {
+ 
+  font-size: 20px;
+  width: 100%;
+  border: 1px solid #ffffff;
+  border-right : none;
+  padding: 20px;
+  height: 10px;
+  border-radius: 10px 0px 0 10px;
+
+  outline: none;
+  color: #141414;
 }
+
+.searchTerm:focus{
+  color: #000000;
+}
+
+.searchButton {
+  width: 50px;
+  height: 45px;
+ 
+  background: rgba(2, 218, 247, 0.877);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+.searchButton:hover{
+  border: 2px solid #04eccd;
+  font-size: 25px;
+}
+/*Resize the wrap to see the search bar change!*/
+
+.wrap{
+  position: absolute;
+  margin-top: 50px;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  
+} 
