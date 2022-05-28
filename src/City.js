@@ -10,7 +10,7 @@ const City = ({ value }) => {
   let img = "http://openweathermap.org/img/wn/" + value.icon + "@2x.png";
 
   return (
-    <div className="container">
+    <div className="container animation">
       <div className="day">{date.toDateString()}</div>
 
       <div className="temp">{value.temperature}°C</div>
